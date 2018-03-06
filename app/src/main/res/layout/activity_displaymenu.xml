@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_displaymenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp.messapp.displaymenuActivity">
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_height="30sp"
+        android:id="@+id/spinner"
+        android:entries="@array/Day_select"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10sp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Breakfast"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:textSize="30sp"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Lunch"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:textSize="30sp"
+                /> <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Dinner"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:textSize="30sp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

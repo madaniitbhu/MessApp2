@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.messapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/newwel"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AfterloginActivity"
+            android:label="login"
+
+            />
+        <activity android:name=".AftermealActivity" />
+        <activity android:name=".AfterrecordActivity"
+            android:parentActivityName=".DrawerActivity"
+            android:label="Record"/>
+        <activity android:name=".Aftertotal_moneyActivity"
+            android:parentActivityName=".DrawerActivity"/>
+        <activity android:name=".After_suggActivity"
+            android:parentActivityName=".DrawerActivity"
+            android:label="complain"/>
+        <activity android:name=".After_feedbackActivity" />
+        <activity android:name=".Aftermeal_dayActivity" />
+        <activity android:name=".displaymenuActivity"
+            android:parentActivityName=".DrawerActivity"/>
+        <activity android:name=".display_recordActivity" />
+        <activity
+            android:name=".DrawerActivity"
+            android:label="Mess app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ProfileActivity"
+            android:parentActivityName=".DrawerActivity"
+            android:label="Profile"/>
+        <activity android:name=".CancleActivity"
+            android:parentActivityName=".DrawerActivity"
+            android:label="Cancel diet"/>
+        <activity android:name=".FirstActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

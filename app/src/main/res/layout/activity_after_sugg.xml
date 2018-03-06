@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_after_sugg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context="com.example.hp.messapp.After_suggActivity">
+
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="10sp"
+        android:id="@+id/spinner"
+        android:entries="@array/array_complain"
+        android:spinnerMode="dropdown"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:inputType="textMultiLine"
+        android:hint="Title"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Date :"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:inputType="textMultiLine"
+        android:hint="DD/MM/YYYY"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description :"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:inputType="textMultiLine"
+        android:hint="Description"
+        android:layout_marginBottom="16dp"
+        android:drawableTintMode="screen"/>
+
+    <Button    android:id="@+id/send"
+        android:layout_width="300sp"
+        android:layout_marginTop="30sp"
+        android:layout_height="50sp"
+        android:text="SEND"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:background="#64B5F6"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
